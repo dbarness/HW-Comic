@@ -1,0 +1,87 @@
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+	background-color: #ccc;
+}
+
+
+
+/* This will enforce block-level properties to HTML5 elements */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, nav, section {
+	display: block;
+}
+
+header {
+	width: 400px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+header h1 {
+	font-family: helvetica, arial, verdana, sans-serif;
+	text-shadow: 1px 1px 2px #fff;
+}
+
+section article {
+	width: 300px;
+	float: left;
+}
+
+section {
+	/*background-color: #FFFFFF;
+    border: 10px solid #000000;*/
+    height: 345px;
+    margin: 20px auto;
+    width: 900px;
+}
+section article img {
+	margin: 0;
+	border: 5px solid #000000;
+	opacity: 0;
+}
+
+section article section {
+	border: medium none;
+    height: 100px;
+    margin: -330px 450px;
+    position: absolute;
+    width: 50px;
+	
+}
+
+section article section p, section article section h1, section article section h3 {
+	width: 80px;
+	margin: 3px 0;
+	opacity: 0;
+}
+@-webkit-keyframes fader {
+	from { opacity: 0; }
+	to { opacity: 1;}
+}
+
+
+section article.one img {
+	-webkit-animation: fader 2s ease-in 1s 1 forwards;
+}
+section article.two img {
+	-webkit-animation: fader 2s ease-in 4s 1 forwards;
+}
+section article section p {
+	-webkit-animation: fader 1s ease-in 6s 1 forwards;
+}
+section article section h3 {
+	-webkit-animation: fader 1s ease-in 7s 1 forwards;
+}
+section article section h1 {
+	-webkit-animation: fader 1s ease-in 8.5s 1 forwards;
+}
+section article.three img {
+	-webkit-animation: fader 1s ease-in 9s 1 forwards;
+}
+
